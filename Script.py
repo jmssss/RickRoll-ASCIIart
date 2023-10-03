@@ -1,10 +1,10 @@
-import time
+import time, os
 
 def screenSetUp(): #makes sure terminal is big enough for ASCII art
     print("1" * 125)
     for x in range(1, 50):
         print("")
-    x = input("Resize terminal so: \n 1. You can see this entire message\n 2. You can see the numbers above\n 3. All those numbers are on the same line\nThen press Enter")
+    os.system("mode con cols=125 lines=50")
     animation()
 
 def animation(): #plays ASCII art animation
