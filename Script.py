@@ -4,7 +4,7 @@ def screenSetUp(): #makes sure terminal is big enough for ASCII art
     print("1" * 125)
     for x in range(1, 50):
         print("")
-    os.system("mode con cols=125 lines=50")
+    os.system("resize -s 50 125")
     animation()
 
 def animation(): #plays ASCII art animation
